@@ -1,0 +1,187 @@
+
+.en_tete {
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+.inscription {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+
+#recherche_loc {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classique {
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.pop {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.activité_1 {
+    object-fit: cover;
+    width: 240px;
+    height: 330px;
+    border-radius: 15px;
+}
+.activité_2 {
+    object-fit: cover;
+    width: 240px;
+    height: 200px;
+    border-radius: 15px;
+}
+.activité_3 {
+    object-fit: cover;
+    width: 240px;
+    height: 130px;
+    border-radius: 15px;
+}
+.activité_4 {
+    object-fit: cover;
+    width: 240px;
+    height: 150px;
+    border-radius: 15px;
+}
+.activité_5 {
+    object-fit: cover;
+    width: 240px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+.hébergements {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.titre {
+    position: top; left: initial;
+}
+
+.hébergement_Marseille {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(228, 228, 228);
+    width: 60%;
+    height: 33%;
+    border-radius: 15px;
+    margin: 50px;    
+    
+}
+.hotel {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: snow;
+    justify-content: space-around;
+    border-radius: 15px;
+    margin: 1px;
+    box-shadow: 1px 1px 8px #555;
+
+}
+.bloc_hotel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.les_plus_populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(228, 228, 228);
+    width: 45%;
+    height: 33%;
+    border-radius: 15px;
+}
+.populaire {
+    display: flex;
+    background-color: snow;
+    flex-wrap: nowrap;
+    width: 82.26%;
+    height: 24.46%;
+    border-radius: 15px;
+    
+}
+
+.activités_Marseille {    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+h2 {
+    width: 100%;
+    border-color: red;
+    margin-left: 1rem;
+}
+a {
+    display: inline-block;
+}
+
+
+.description {
+
+}
+.bloc_photo_gauche {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.bloc_gaucge1 {
+    width: 100%;
+}
+.bloc_gauche2 {
+    width: 100%;
+    flex-direction: column;
+}
+.bloc_photo_droite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+}
+.bloc_droite1 {
+    width: 100%;
+}
+.bloc_droite_2 {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pied_de_page {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #rgb(228, 228, 228);
+}
+.apropo {
+    flex-direction: column;
+}
+.hebergement {
+    flex-direction: column;
+}
+.assistance {
+    flex-direction: column;
+}
+.etoile_bleu {
+    color: blue;
+}
+.etoile_grise {
+    color: #rgb(228, 228, 228);
+}

@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.en_tete {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inscription {
+    width: 100%;
+}
+
+.inscription ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid orange;
+}
+
+.inscription li {
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inscription li.li-liens {
+    order: 3;
+    justify-content: center;
+}
+
+.inscription li.li-logo {
+    order: 1;
+}
+
+.inscription li .logo {
+    width: 70px;
+    height: 30px;
+    display: block;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.inscription li.li-inscription {
+    order: 2;
+    justify-content: end;
+}
+
+#recherche_loc {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titre {
+    position: top;
+    left: initial;
+}
+.hebergements {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hebergement_Marseille {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 15px;
+    background-color: lightgrey    
+}
+.bloc_hotel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+.hotel {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    justify-content: space-around;
+    background-color: snow;
+    margin: 1px;
+    box-shadow: 1px 1px 8px #555;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+}
+
+.hotel .box-img {
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+
+.hotel .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+
+.les_plus_populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: lightgrey
+}
+.populaire {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px;
+    justify-content: space-around;
+    background-color: snow;
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+}
+.populaire .description_pop {
+    display: flex;
+    flex-wrap: wrap;
+}
+.populaire .img-pop {
+    width: 70%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+}
+.img-pop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-pop {
+width: 55%;
+height: 100%;
+}
+
+.img-activite1 {
+    width: 240px;
+    height: 200px;
+    border-radius: 15px;
+}
+.img-activite2 {
+    width: 240px;
+    height: 200px;
+    border-radius: 15px;
+}
+.img-activite3 {
+    width: 240px;
+    height: 160px;
+    border-radius: 15px;
+}
+.img-activite4 {
+    width: 240px;
+    height: 160px;
+    border-radius: 15px;
+}
+.img-activite5 {
+    width: 240px;
+    height: 160px;
+    border-radius: 15px;
+}
+.activites_Marseille {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 15px;
+}
+.activite {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: snow;
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 1px 1px 8px #555;
+}
+.activite h3 {
+    justify-content: flex-end;
+}
+.img-activite1 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.img-activite2 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.img-activite3 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.img-activite4 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.img-activite5 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.vieu_port {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.pomegues {
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.frioul {
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.clanques {
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.notre_dame {
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.longchamps {
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+
+.etoile_bleu {
+    color: blue;
+}
+.etoile_grise {
+    color: lightgrey
+}
+p {
+    width: 100%;
+    color: black;
+}
