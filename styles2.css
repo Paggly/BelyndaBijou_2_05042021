@@ -7,14 +7,16 @@
 }
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .en_tete {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 3rem;
 }
 .en_tete a {
+    margin-top: 15px;
     color: black;
 }
 .button_hover_nav_top {
@@ -53,6 +55,7 @@ body {
 .inscription li.li-liens {
     order: 3;
     justify-content: center;
+    padding-top: 10px;
 }
 .inscription li.li-logo {
     order: 1;
@@ -71,20 +74,26 @@ body {
     order: 2;
     justify-content: end;
 }
-
 section {
     margin: 10px;
 }
+
 h1 {
     margin-bottom: 10px;
+    text-align: top;
+    margin-left: 10px;
 }
 .presentation {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: start;
+    margin-left: 10px;
 }
 
 #recherche_loc {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    margin-left: 10px;
 }
 #recherche_loc .map_marker {
     background-color: #f2f2f2;
@@ -129,6 +138,7 @@ input {
     flex-wrap: wrap;
     margin: 5px;
     justify-content: space-between;
+    font-size: 13px;
 }
 #nav_filtres strong {
     color: black;
@@ -158,14 +168,21 @@ input {
     margin-bottom: 5px;
     padding-right: 9px;
 }
+.boutons_filtre:hover {
+    background-color: #deebff;
+    font-size: larger;
+}
 .boutons_filtre i{
     margin-right: 8px;
 }
+.info {
+    margin-left: 10px;
+}
 .info i {
-    border-radius: 15px;
+    border-radius: 100%;
     color: #0065fc;
     font-size: x-small;
-    border-color: 2px solid #555;
+    border-color: 2px solid rgb(47, 46, 46);
 }
 .info span {
     margin-bottom: 5px;
@@ -198,8 +215,13 @@ input {
     margin-bottom: 15px;
     margin-top: 10px;
 }
-.hebergement_Marseille .afficher_plus {
+.afficher_plus {
     font-size: 16px;
+    padding-bottom: 20px;
+}
+.afficher_plus:hover {
+    color: #555
+
 }
 .description {
     display: flex;
@@ -237,14 +259,12 @@ input {
     width: 100%;
     height: 100%;
     object-fit: cover ;
-}
 
+}
 .les_plus_populaires {
     display: flex;
     flex-wrap: wrap;
-
     width: 100%;
-    border-radius: 15px;
     background-color: #f2f2f2;
     padding: 5px;
 }
@@ -299,7 +319,8 @@ input {
     padding-top: 10px;
 }
 .activites_Marseille h2 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    margin-top: 15px;
 }
 
 .activite {
@@ -397,12 +418,19 @@ input {
     background-color: #f2f2f2;
     padding: 15px;
 }
+
 .pied_de_page h4 {
-    align-items: initial;
+    width: 100%;
+    margin-bottom: 15px;
+    align-items: initial
 }
+
 .pied_de_page a {
     font-size: small;
     color: #000;
+}
+.pied_de_page li {
+    margin-bottom: 10px;
 }
 .pied_de_page li :hover {
     color: gray;
@@ -431,6 +459,8 @@ input {
 
 
 @media screen and (min-width: 576px) and (max-width: 750px) {
+
+    
 
     .hotel {
         width: 46%;
@@ -525,6 +555,9 @@ input {
     }
     .hebergements .les_plus_populaires {
         order: 2;
+    }
+    .les_plus_populaires {
+        border-radius: 15px;
     }
     .hebergement_Marseille {
         background-color: #f2f2f2;
@@ -639,9 +672,15 @@ input {
     }
     #nav_filtres {
         display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 70%;
+    
+    }
+    .filtre {
+        width: 7%;
+    
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .hebergements {
         width: 100%;
@@ -672,6 +711,7 @@ input {
         width: 38%;
         height: 100%;
         margin-top: 13px;
+        border-radius: 15px;
     }
     .les_plus_populaires h2 {
         margin-bottom: 10px;
@@ -688,6 +728,7 @@ input {
         flex-wrap: wrap;
         padding-top: 20px;
         width: 50%;
+    
     }
     .bloc_gauche1 {
         width: 50%;
@@ -703,23 +744,33 @@ input {
     .bloc_gauche2 {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
-
-        
+        width: 50%;    
     }
- 
+    .bloc_gauche2 .pomegues {
+        height: 48%;
+    }
+    .bloc_gauche2 .frioul {
+        height: 48%;
+    }
+    
     .bloc_photo_droite {
         display: flex;
         flex-wrap: wrap;
         padding-top: 20px;
         width: 50%;
+    
     }
     .bloc_droite1 {
         justify-content: left;
         width: 50%;
-    
     }
-    .calanques {
+    .bloc_droite2 .notre_dame {
+        height: 48%;
+    }
+    .bloc_droite2 .longchamps {
+        height: 48%;
+    }
+    .bloc_droite1 .calanques {
         height: 100%;
     }
     .calanques .img-activite {
@@ -755,6 +806,7 @@ input {
     }
     .apropo {
         width: 30%;
+        margin-top: 20px;
         justify-content: center;
         flex-direction: none;
     }
