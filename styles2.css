@@ -182,6 +182,7 @@ input {
 .page h2 {
     justify-content: left;
     align-items: flex-start;
+    border-bottom: 5px;
 }
 
 .hebergements {
@@ -194,8 +195,8 @@ input {
     padding: 5px;
     width: 100%;
     border-radius: 15px;
-    background-color: #f2f2f2;
     margin-bottom: 15px;
+    margin-top: 10px;
 }
 .hebergement_Marseille .afficher_plus {
     font-size: 16px;
@@ -207,6 +208,7 @@ input {
 }
 .hotel .description {
     width: 100%;
+    margin-left: 0px;
 }
 .bloc_hotel {
     width: 100%;
@@ -240,7 +242,7 @@ input {
 .les_plus_populaires {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
     width: 100%;
     border-radius: 15px;
     background-color: #f2f2f2;
@@ -261,7 +263,7 @@ input {
     box-shadow: 1px 1px 8px #555;
     width: 100%;
     height: 120px;
-    margin: 10px;
+    margin: 10px auto;
     padding: 5px;
 }
 .populaire .description_pop {
@@ -294,13 +296,19 @@ input {
     justify-content: space-between;
     width: 100%;
     border-radius: 20px;
+    padding-top: 10px;
 }
+.activites_Marseille h2 {
+    margin-bottom: 10px;
+}
+
 .activite {
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
     background-color: snow;
     height: 200px;
+    width: 100%;
     margin-bottom: 20px;
     box-shadow: 1px 1px 8px #555;
 }
@@ -395,6 +403,10 @@ input {
 .pied_de_page a {
     font-size: small;
     color: #000;
+}
+.pied_de_page li :hover {
+    color: gray;
+    border-bottom: 1px solid rgb(59, 58, 58);
 }
 .apropo {
     display: flex;
@@ -513,6 +525,9 @@ input {
     }
     .hebergements .les_plus_populaires {
         order: 2;
+    }
+    .hebergement_Marseille {
+        background-color: #f2f2f2;
     }
     .activites_Marseille {
         display: flex;
@@ -635,7 +650,8 @@ input {
     .hebergement_Marseille {
         width: 61%;
         height: 100%;
-    
+        background-color: #f2f2f2;
+        margin-top: none;
     }
     .bloc_hotel {
         display: flex;
@@ -655,6 +671,7 @@ input {
     .les_plus_populaires {
         width: 38%;
         height: 100%;
+        margin-top: 13px;
     }
     .les_plus_populaires h2 {
         margin-bottom: 10px;
@@ -670,9 +687,7 @@ input {
         display: flex;
         flex-wrap: wrap;
         padding-top: 20px;
-        width: 49%;
-        justify-content: space-between;
-        margin-left: 5px;
+        width: 50%;
     }
     .bloc_gauche1 {
         width: 50%;
@@ -697,9 +712,7 @@ input {
         display: flex;
         flex-wrap: wrap;
         padding-top: 20px;
-        width: 49%;
-        justify-content: space-between;
-        margin-right: 5px;
+        width: 50%;
     }
     .bloc_droite1 {
         justify-content: left;
@@ -715,17 +728,17 @@ input {
     .bloc_droite2 {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
         width: 50%;
     
     }
     .bloc_photo_droite .activite {
-        width: 220px;
         margin-left: 15px;
+        width: 95%;
+        justify-content: space-between;
     }
     .bloc_photo_gauche .activite {
-        width: 220px;
         margin-left: 15px;
+        width: 95%;
     }
    
 
